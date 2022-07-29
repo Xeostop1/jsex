@@ -190,7 +190,11 @@ nav {
 
 /*history Section */
 .history {
+<<<<<<< HEAD
   height: 2650px;
+=======
+  height: 800px;
+>>>>>>> 74d497a1c84456afc22ce72159bfc0a57af845bb
   /* background: url(file:///D:/Project/front01/Project_00/src/Assets/Images/mjf.jpeg) no-repeat center center; */
   background-size: cover;
   display: flex;
