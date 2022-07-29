@@ -31,7 +31,14 @@
         setInterval(ddayView, 1000);
         //setInterval 에러
 
-
+        //=====================전광판==================
+        const marqueeDiv=document.querySelector(".marqueeDiv marquee");
+        const singer="LINEUP  David Bowie, James Brown, BB King, Geese Jarrett, Carlos Santana, Etta James, Patty Smith, Massive Attack, Viyok, Radiohead, Leonard Cohen, Deep Purple," 
+        +"and Prince, Jack White, Questlove, Quincy Jones";
+        function marquee(){
+          marqueeDiv.innerText=singer;
+        }
+        marquee();
 
 
 
