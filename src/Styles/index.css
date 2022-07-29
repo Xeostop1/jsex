@@ -15,7 +15,7 @@ body {
   font-size: 15px;
   margin: 0;
   color: #222;
-  line-height: 1.5em;\\\\\\
+  line-height: 1.5em;
 }
 
 a {
@@ -64,7 +64,7 @@ header {
   position: fixed;
   width:100%;
   z-index:1000;
-  trasition:0.5s;
+  transition:0.5s;
 }
 
 /* header>banner */
@@ -167,7 +167,7 @@ nav {
 .intro {
   height: 100vh;
   /* width: 100%; */
-  background: url(/src/Assets/Images/Jazz_Festival.jpeg) no-repeat center center;
+  background: url(../../src/Assets/Images/Jazz_Festival.jpeg) no-repeat center center;
   background-size: cover;
 
   display: flex;
@@ -191,7 +191,7 @@ nav {
 /* CallAction Section */
 .callaction {
   height: 450px;
-  background: url(/src/Assets/Images/mjf.jpeg) no-repeat center center;
+  background: url(../../src/Assets/Images/mjf.jpeg) no-repeat center center;
   background-size: cover;
 
   display: flex;
