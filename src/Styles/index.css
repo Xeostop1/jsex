@@ -167,7 +167,7 @@ nav {
 .intro {
   height: 100vh;
   /* width: 100%; */
-  background: url(/src/Assets/Images/Jazz_Festival.jpeg) no-repeat center center;
+  background: url(../../src/Assets/Images/Jazz_Festival.jpeg) no-repeat center center;
   background-size: cover;
 
   display: flex;
@@ -191,7 +191,7 @@ nav {
 /* CallAction Section */
 .callaction {
   height: 450px;
-  background: url(/src/Assets/Images/mjf.jpeg) no-repeat center center;
+  background: url(../../src/Assets/Images/mjf.jpeg) no-repeat center center;
   background-size: cover;
 
   display: flex;
