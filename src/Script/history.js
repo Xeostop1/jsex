@@ -48,7 +48,6 @@ function displayItems(items) {
 }
 
 //section button list 목록 HTML 생성
-
 function createHTMLString(item) {
   return `
   <button class="btn colorBtn" + "${item}" data-key=" ${item.title}" data-value=" ${item.title}">
@@ -71,8 +70,8 @@ function createHTMLString(item) {
     `;
 }
 
-// 
 
+// items 버튼이  클릭되면  displayItems 해당 아이템을 필터링을 해서 보여줘라
 function onButtonClick(event, items) {
   const dataset = event.target.dataset;//dataset은 전용 속성: 읽기/쓰기 액세스 제공 
   const key = dataset.key;
@@ -101,13 +100,5 @@ loadItems()
    setEventListeners(items);
   })
   .catch(console.log);
-
-
-  // var cat = '{"name": "나비", "age": 2, "weight": 2.4}';
-  //var items = '{"title": "2022", "year" :"2022", "content": "MONT REUX JAZZ FESTIVAL WHERE LEGENDS ARE BORN ","image": "../Assets/images/historyimg/2022 LARGE-1800x0-c-default.jpg"}';
-
-
-  // var jsonData = JSON.parse(cat); // js 객체를 문자열로 변환
-  // document.getElementById("json").innerHTML = jsonData.image + "의 나이는 " + jsonData.content + "살 입니다.";
 
 })//close

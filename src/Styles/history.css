@@ -108,7 +108,6 @@ header.active .banner {
 }
 
 
-
 /* navigation hover 시 underline animation */
 header.active .gnb a {
   position: relative;
@@ -171,7 +170,7 @@ nav {
   display: flex;
   align-items: center;
 }
-.heading {
+.heading { 
   color: #fff;
   text-align: center;
   margin-top:400px;
@@ -234,6 +233,51 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.items {
+  width: 80%;
+  height: 90%;
+  list-style: none;
+  padding-left: 0;
+ }
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  margin-bottom: var(--base-space);
+}
+
+.item img{
+  width: 300px;
+  padding: 3%;
+}
+
+
+.item button{
+  font-size: 20px;
+  padding: 3%;
+  background: #000;
+  color: #fff;
+ 
+}
+
+.item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item__description {
+  /* margin-left: 0; */
+  width: 300px;
+  /* font-size: ; */
+}
+
+.barDiv{
+width:1px;
+height: 100%;
 }
 
 .items {
@@ -327,6 +371,9 @@ height: 100%;
   font-style:italic;
   color:white ;
 }
+
+
+/* history */
 
 /* Footer */
 footer {
