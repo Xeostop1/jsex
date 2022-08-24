@@ -17,10 +17,8 @@
           // dots : true
       })
       
-        //==============디데이======================== 구현불가!! 
-      const dDayDiv=document.querySelector(".dDay > span");
-      const today=new Date(); //현재 날짜
-      const dday=new Date(" 1967-6-18 00:00:00").getTime(); //디데이 날짜 
+
+        //==============디데이============git test============
 
       function ddayView(){
         const gap=today-dday+
