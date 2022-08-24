@@ -52,19 +52,21 @@ button {
 
 /* Common CSS */
 .inner {
-  width: 1300px;
+  width: 1400px;
   margin: auto;
 }
 
 /* container */
-.container {}
+.container {
+  background-color: #000;
+}
 
 /* header */
 header {
   position: fixed;
   width:100%;
   z-index:1000;
-  trasition:0.5s;
+  transition:0.5s;
 }
 
 /* header>banner */
@@ -106,7 +108,7 @@ header.active .banner {
 }
 
 header.active nav {
- 
+  
 }
 
 /* navigation hover 시 underline animation */
@@ -166,14 +168,12 @@ nav {
 /* Main .intro */
 .h_title {
   height: 65vh;
-  /* width: 100%; */
-  background: url(file:///D:/Project/front01/Project_00/src/Assets/Images/suv_bg.png) no-repeat center center;
+  background: url(/../src/Assets/Images/suv_bg.png) no-repeat center center;
   background-size: cover;
-
   display: flex;
   align-items: center;
 }
-.heading {
+.heading { 
   color: #fff;
   text-align: center;
   margin-top:400px;
@@ -189,17 +189,98 @@ nav {
 }
 
 /*history Section */
-.history {
-
-  height: 2650px;
-
-  /* background: url(file:///D:/Project/front01/Project_00/src/Assets/Images/mjf.jpeg) no-repeat center center; */
-  background-size: cover;
+.buttons { 
+ background: url(..\Assets\Images\historyimg\film.png) repeat ; 
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
+  padding: 30px;
+}
+
+.buttons button{
+ /*  background: url( "/src/Assets/Images/historyimg/filmframe.png" ) no-repeat; */
+  color: #fff;
+  background: #000; 
+  font-size: 20px;
+  padding: 1%;
+
+}
+
+.btnAll{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+  margin-right: var(--base-space);
+}
+
+.btnAll:hover,
+.btn:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+.all_itemsDiv {
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.items {
+  width: 80%;
+  height: 90%;
+  list-style: none;
+  padding-left: 0;
+ }
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  margin-bottom: var(--base-space);
+}
+
+.item img{
+  width: 300px;
+  padding: 3%;
+}
+
+
+.item button{
+  font-size: 20px;
+  padding: 3%;
+  background: #000;
+  color: #fff;
+ 
+}
+
+.item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item__description {
+  /* margin-left: 0; */
+  width: 300px;
+  /* font-size: ; */
+}
+
+.barDiv{
+width:1px;
+height: 100%;
 }
 
 .history:before {
@@ -242,6 +323,12 @@ nav {
   color: #000;
 }
 
+.history span {
+  font-style:italic;
+  color:white ;
+}
+
+/* history */
 /* Footer */
 footer {
   background: #000;
