@@ -69,7 +69,7 @@ header {
   position: fixed;
   width:100%;
   z-index:1000;
-  trasition:0.5s;
+  transition:0.5s;
 }
 
 /* header>banner */
@@ -214,7 +214,7 @@ nav {
 
 }
 
-.btnAll{
+.btnHistory{
   color: #fff;
   background-color: transparent;
   border: none;
@@ -229,7 +229,7 @@ nav {
   margin-right: var(--base-space);
 }
 
-.btnAll:hover,
+.btnHistory:hover,
 .btn:hover,
 .logo:hover {
   transform: scale(1.1);

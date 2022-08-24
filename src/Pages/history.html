@@ -18,7 +18,7 @@
 
   <!-- JacaScript -->
   <script src="../Script/history.js"></script>
-  <script src="../index.js"></script>
+  <script src="../Script/index.js"></script>
 
   <!-- CSS file Link(항상 헤더 가장 하단으로 보낸다) -->
   <link rel="stylesheet" href="../Styles/index.css" />
@@ -58,7 +58,7 @@
     <main class="h_title">
       <div class="inner">
         <div class="heading">
-        <button class ="btnAll"><h1>History</h1></button>
+        <button class ="btnHistory"><h1>History</h1></button>
         <p style="color:#7AFEFF;">- MONTREUX JAZZ FESTIVAL WHERE LEGENDS ARE BORN -</p>
         <hr color="">  
         
@@ -74,15 +74,15 @@
        <!-- Buttons -->
        <section class="buttons">
         
-        <button class="btnAll"><img src ="\src\Assets\Images\historyimg\film.png" width="50px">
+        <button class="btnAll"><img src ="..\Assets\Images\historyimg\film.png" width="50px">
  
         </button>
-        <div id="itemList" >
+        <!-- <div id="itemList" > -->
         <!-- <img src="\src\Assets\Images\historyimg\film.png"   position= "relative" width="50px" height="45px" alt="테스트이미지" /> -->
         <button class="btn colorBtn 2022" data-key="title" data-value="2022">
           2022
-        </div>
-
+        </button>
+        <!-- </div> -->
 
         <button class="btn colorBtn 2019" data-key="title" data-value="2019">
           2019
@@ -129,7 +129,7 @@
         <button class="btn colorBtn 2013" data-key="title" data-value="2013">
           1986
         </button>
-      <button class="btnAll"><img src ="\src\Assets\Images\historyimg\film.png" width="50px">
+      <button class="btnAll"><img src ="..\Assets\Images\historyimg\film.png" width="50px">
 
           </button> 
       </section>
@@ -137,7 +137,7 @@
       <!-- Items -->
       <div class="all_itemsDiv">
       <ul class="items">
-        <li class="item">
+        <!-- <li class="item">
 
          <div> <img src="${item.image}" width=""alt="${item.title}" class="item__thumbnail" /></div>
           <div>${item.year} </div>
@@ -145,7 +145,7 @@
           <div>
           <span class="item__description">${item.content}</span>
          </div>
-        </li>
+        </li> -->
 
       </ul>
     </div>

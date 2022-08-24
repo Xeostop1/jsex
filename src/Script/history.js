@@ -87,7 +87,7 @@ function onButtonClick(event, items) {
 
 
 function setEventListeners(items) {
-  const logo = document.querySelector('.btnAll');
+  const logo = document.querySelector('.btnHistory');
   const buttons = document.querySelector('.buttons');
   logo.addEventListener('click', () => displayItems(items));
   buttons.addEventListener('click', event => onButtonClick(event, items));
