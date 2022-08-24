@@ -17,7 +17,7 @@ window.addEventListener('load',function (){
           // dots : true
       })
       
-        //==============디데이========================
+        //==============디데이============git test============
       function ddayView(){
         let dDayDiv=document.querySelector(".dDay > span");
         let today=new Date(); //현재 날짜
