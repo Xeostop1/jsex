@@ -2,7 +2,6 @@
 window.addEventListener('load',function (){
       //=========배경화면정리==================
       let introBg=this.document.querySelector(".intro");
-
       introBg.style.backgroundImage=`url("")`;
 
 
@@ -19,6 +18,7 @@ window.addEventListener('load',function (){
           // dots : true
       })
       
+
 
         //==============디데이========================
       function ddayView(){
@@ -49,7 +49,6 @@ window.addEventListener('load',function (){
       marquee();
 
       //================이미지크게보기, 모달사용==================  
-
       let modalMain= document.querySelector(".galleryModal");   //전체모달
       let delImg= document.querySelector(".gallery img"); 
       let closeModal= document.querySelector(".closeBtn");      //닫기버튼
@@ -72,6 +71,7 @@ window.addEventListener('load',function (){
             innerImg[i].classList.remove("hidden");
           }
           //closeBtn위치를 상대위치로 변경하고 싶은데 구현불가
+
 
         });
 });//close

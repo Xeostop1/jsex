@@ -47,14 +47,6 @@ function displayItems(items) {
   container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
 
-// Update the list with the given items
-// 지정된 항목으로 목록 업데이트
-function displayItems(items) {
-  const container = document.querySelector('.items');
-  container.innerHTML = items.map(item => createHTMLString(item)).join('');
-}
-
-
 //section button list 목록 HTML 생성
 function createHTMLString(item) {
   return `
@@ -78,8 +70,8 @@ function createHTMLString(item) {
     `;
 }
 
-// items 버튼이  클릭되면  displayItems 해당 아이템을 필터링을 해서 보여줘라
 
+// items 버튼이  클릭되면  displayItems 해당 아이템을 필터링을 해서 보여줘라
 function onButtonClick(event, items) {
   const dataset = event.target.dataset;//dataset은 전용 속성: 읽기/쓰기 액세스 제공 
   const key = dataset.key;
@@ -94,7 +86,7 @@ function onButtonClick(event, items) {
 
 
 function setEventListeners(items) {
-  const logo = document.querySelector('.btnAll');
+  const logo = document.querySelector('.btnHistory');
   const buttons = document.querySelector('.buttons');
   logo.addEventListener('click', () => displayItems(items));
   buttons.addEventListener('click', event => onButtonClick(event, items));

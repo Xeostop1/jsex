@@ -6,10 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
-  /* scroll-behavior는 IE에서 적용되지 않는다. */
-  /* scroll-behavior: smooth; */
-}
+
 
 body {
   font-size: 15px;
@@ -41,11 +38,14 @@ ul {
   padding: 0;
 }
 
+
+
 input,
 button,
 textarea {
   outline: none;
 }
+
 button {
   cursor: pointer;
 }
@@ -107,9 +107,6 @@ header.active .banner {
   overflow: hidden;
 }
 
-header.active nav {
-  
-}
 
 /* navigation hover 시 underline animation */
 header.active .gnb a {
@@ -207,7 +204,7 @@ nav {
 
 }
 
-.btnAll{
+.btnHistory{
   color: #fff;
   background-color: transparent;
   border: none;
@@ -222,7 +219,7 @@ nav {
   margin-right: var(--base-space);
 }
 
-.btnAll:hover,
+.btnHistory:hover,
 .btn:hover,
 .logo:hover {
   transform: scale(1.1);
@@ -283,6 +280,52 @@ width:1px;
 height: 100%;
 }
 
+.items {
+  width: 80%;
+  height: 90%;
+  list-style: none;
+  padding-left: 0;
+ }
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  margin-bottom: var(--base-space);
+}
+
+.item img{
+  width: 300px;
+  padding: 3%;
+}
+
+
+.item button{
+  font-size: 20px;
+  padding: 3%;
+  background: #000;
+  color: #fff;
+ 
+}
+
+.item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item__description {
+  /* margin-left: ; */
+  width: 300px;
+  /* font-size: ; */
+}
+
+.barDiv{
+width:1px;
+height: 100%;
+}
+
 .history:before {
   content: '';
   background: #0B0B0B;
@@ -290,6 +333,7 @@ height: 100%;
   height: 100%;
   position: absolute;
 }
+
 .history-heading {
   text-align: center;
   margin-top: 50px;
@@ -328,7 +372,9 @@ height: 100%;
   color:white ;
 }
 
+
 /* history */
+
 /* Footer */
 footer {
   background: #000;
