@@ -164,13 +164,12 @@ nav {
 .gnb a:last-child {
   margin: 0;
 }
-/* history */
+
 /* Main .intro */
 .h_title {
   height: 65vh;
   background: url(/../src/Assets/Images/suv_bg.png) no-repeat center center;
   background-size: cover;
-
   display: flex;
   align-items: center;
 }
@@ -191,7 +190,7 @@ nav {
 
 /*history Section */
 .buttons { 
- background: url(\src\Assets\Images\historyimg\film.png) repeat ; 
+ background: url(..\Assets\Images\historyimg\film.png) repeat ; 
   display: flex;
   justify-content: center;
   align-items: center;
