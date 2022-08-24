@@ -6,10 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
-  /* scroll-behavior는 IE에서 적용되지 않는다. */
-  /* scroll-behavior: smooth; */
-}
+
 
 body {
   font-size: 15px;
@@ -110,9 +107,7 @@ header.active .banner {
   overflow: hidden;
 }
 
-header.active nav {
- 
-}
+
 
 /* navigation hover 시 underline animation */
 header.active .gnb a {
@@ -173,14 +168,10 @@ nav {
   height: 65vh;
   background: url(/../src/Assets/Images/suv_bg.png) no-repeat center center;
   background-size: cover;
-
   display: flex;
   align-items: center;
 }
 .heading {
-
-
-  
   color: #fff;
   text-align: center;
   margin-top:400px;
@@ -197,7 +188,7 @@ nav {
 
 /*history Section */
 .buttons { 
- background: url(\src\Assets\Images\historyimg\film.png) repeat ; 
+ background: url(..\Assets\Images\historyimg\film.png) repeat ; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,9 +272,9 @@ nav {
 }
 
 .item__description {
-  margin-left: ;
+  /* margin-left: ; */
   width: 300px;
-  font-size: ;
+  /* font-size: ; */
 }
 
 .barDiv{
