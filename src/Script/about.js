@@ -44,7 +44,7 @@ window.addEventListener('load',function (){
 
   //================이미지크게보기, 모달사용==================  
   let modalMain= document.querySelector(".galleryModal");   //전체모달
-  let delImg= document.querySelector(".gallery img"); 
+  //let delImg= document.querySelector(".gallery img"); 
   let closeModal= document.querySelector(".closeBtn");      //닫기버튼
   let innerImg= document.querySelectorAll(".inner_gallery img"); //버튼용, 이미 배열의 형태로 변경되어 있음 
   let modalImg= document.querySelector(".modalImg");
@@ -59,13 +59,12 @@ window.addEventListener('load',function (){
       modalMain.style.display="flex";
       });
   }
-    //======Off====
-    window.onload= closeModal.addEventListener("click", (e)=>{
+    //======Off==== closeBtn위치를 상대위치로 변경하고 싶은데 구현불가
+    closeModal.addEventListener("click", function() {
       modalMain.style.display="none";
       for (let i = 0; i < innerImg.length; i++) {
         innerImg[i].classList.remove("hidden");
       }
-      //closeBtn위치를 상대위치로 변경하고 싶은데 구현불가
     });
     
 });//close
