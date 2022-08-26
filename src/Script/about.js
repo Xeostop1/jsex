@@ -51,7 +51,7 @@ window.addEventListener('load',function (){
 
   // ======On==== for문 사용
   for (let i = 0; i < 4; i++) {
-    innerImg[i].addEventListener("click", (e)=>{
+    innerImg[i].addEventListener("click", function(){
       innerImg[i].classList.add("hidden");
       let imgUrl=innerImg[i].src;
       modalImg.style.backgroundImage=`url("${imgUrl}")`;
