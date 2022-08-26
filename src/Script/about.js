@@ -46,11 +46,12 @@ window.addEventListener('load',function (){
   let modalMain= document.querySelector(".galleryModal");   //전체모달
   let delImg= document.querySelector(".gallery img"); 
   let closeModal= document.querySelector(".closeBtn");      //닫기버튼
-  let innerImg= document.querySelectorAll(".inner_gallery img"); //버튼용
+  let innerImg= document.querySelectorAll(".inner_gallery img"); //버튼용, 이미 배열의 형태로 변경되어 있음 
   let modalImg= document.querySelector(".modalImg");
 
-  // ======On==== for문 사용
-  for (let i = 0; i < 4; i++) {
+  
+  // ======On==== for문 사용(쿼리 셀렉트All 배열형태 데이터를 반복문 사용)
+  for (let i = 0; i < innerImg.length; i++) {
     innerImg[i].addEventListener("click", function(){
       innerImg[i].classList.add("hidden");
       let imgUrl=innerImg[i].src;
