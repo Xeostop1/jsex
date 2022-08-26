@@ -44,27 +44,27 @@ window.addEventListener('load',function (){
 
   //================이미지크게보기, 모달사용==================  
   let modalMain= document.querySelector(".galleryModal");   //전체모달
-  let delImg= document.querySelector(".gallery img"); 
+  //let delImg= document.querySelector(".gallery img"); 
   let closeModal= document.querySelector(".closeBtn");      //닫기버튼
-  let innerImg= document.querySelectorAll(".inner_gallery img"); //버튼용
+  let innerImg= document.querySelectorAll(".inner_gallery img"); //버튼용, 이미 배열의 형태로 변경되어 있음 
   let modalImg= document.querySelector(".modalImg");
 
-  // ======On==== for문 사용
-  for (let i = 0; i < 4; i++) {
-    innerImg[i].addEventListener("click", (e)=>{
+  
+  // ======On==== for문 사용(쿼리 셀렉트All 배열형태 데이터를 반복문 사용)
+  for (let i = 0; i < innerImg.length; i++) {
+    innerImg[i].addEventListener("click", function(){
       innerImg[i].classList.add("hidden");
       let imgUrl=innerImg[i].src;
       modalImg.style.backgroundImage=`url("${imgUrl}")`;
       modalMain.style.display="flex";
       });
   }
-    //======Off====
-    window.onload= closeModal.addEventListener("click", (e)=>{
+    //======Off==== closeBtn위치를 상대위치로 변경하고 싶은데 구현불가
+    closeModal.addEventListener("click", function() {
       modalMain.style.display="none";
       for (let i = 0; i < innerImg.length; i++) {
         innerImg[i].classList.remove("hidden");
       }
-      //closeBtn위치를 상대위치로 변경하고 싶은데 구현불가
     });
     
 });//close
