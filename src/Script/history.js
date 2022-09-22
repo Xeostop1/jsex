@@ -40,8 +40,7 @@ window.addEventListener('load',function (){
  function loadItems() {
   return fetch('/src/data/data.json') //fetch를 통해 성공적으로 받아오면 response를 얻고 
     .then(response => response.json())//성공적으로 받아오면 response를 얻고 
-    .then(json =>json.items);//전체 json을 return하지 않고 json에 있는 items만 받아오기 위해 json.items을 사용
-   
+    .then(json =>json.items);//전체 json을 return하지 않고 json에 있는 items만 받아오기 위해 json.items을 사용  
 }
 
 // Update the list with the given items
@@ -49,13 +48,14 @@ window.addEventListener('load',function (){
 function displayItems(items) {
   const container = document.querySelector('.items');
   container.innerHTML = items.map(item => createHTMLString(item)).join('');
+//  container.innerHTML = items.map(item => createBtn(item)).join('');
 }
 
 //section button list 목록 HTML 생성
 
-function createHTMLString(item) {
+function createBtn(item) {
   return `
-  <button class="btn colorBtn" + "${item}" data-key=" ${item.title}" data-value=" ${item.title}">
+  <button class="btn colorBtn" + "${item.title}" data-key=" ${item.title}" data-value=" ${item.title}">
   "${item.title}"
  </button>
     `;
@@ -108,8 +108,7 @@ loadItems()
 
 
   // var cat = '{"name": "나비", "age": 2, "weight": 2.4}';
-  //var items = '{"title": "2022", "year" :"2022", "content": "MONT REUX JAZZ FESTIVAL WHERE LEGENDS ARE BORN ","image": "../Assets/images/historyimg/2022 LARGE-1800x0-c-default.jpg"}';
-
+  // var items = '{"title": "2022", "year" :"2022", "content": "MONT REUX JAZZ FESTIVAL WHERE LEGENDS ARE BORN ","image": "../Assets/images/historyimg/2022 LARGE-1800x0-c-default.jpg"}';
 
   // var jsonData = JSON.parse(cat); // js 객체를 문자열로 변환
   // document.getElementById("json").innerHTML = jsonData.image + "의 나이는 " + jsonData.content + "살 입니다.";
